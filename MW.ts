@@ -18,7 +18,7 @@ namespace MagicWand_EXT {
     export function forward(n: number): void {
         // Add code here
         pins.digitalWritePin(DigitalPin.P0, 0)
-        pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
+        pins.analogWritePin(AnalogPin.P1, (n - 20) * 1023 / 100)
         pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
 
     }
@@ -35,7 +35,7 @@ namespace MagicWand_EXT {
 
         pins.digitalWritePin(DigitalPin.P0, 1)
         n = 100 - n
-        pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
+        pins.analogWritePin(AnalogPin.P1, (n + 20) * 1023 / 100)
         pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
 
     }
@@ -60,7 +60,7 @@ namespace MagicWand_EXT {
             pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
         } else {
             m = n * R / (R + d)
-            pins.analogWritePin(AnalogPin.P1, m * 1023 / 100)
+            pins.analogWritePin(AnalogPin.P1, (m - 20) * 1023 / 100)
             pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
         }
 
@@ -83,11 +83,11 @@ namespace MagicWand_EXT {
         let m = 0
         if (R == 0) {
             pins.analogWritePin(AnalogPin.P2, 0)
-            pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
+            pins.analogWritePin(AnalogPin.P1, n * 1023 / 100 - 50)
         } else {
             m = n * R / (R + d)
             pins.analogWritePin(AnalogPin.P2, m * 1023 / 100)
-            pins.analogWritePin(AnalogPin.P1, n * 1023 / 100)
+            pins.analogWritePin(AnalogPin.P1, (n - 20) * 1023 / 100)
         }
 
     }
