@@ -1,5 +1,5 @@
 {
-    "name": "pxt-magicwand",
+    "name": "pxt-magicwand-dc",
     "version": "0.0.1",
     "description": "",
     "dependencies": {
@@ -27,5 +27,5 @@
             }
         }
     },
-    "installedVersion": "workspace:72804b63-9edc-4142-14c0-e5a9d9c73ba1"
+    "installedVersion": "workspace:e6ab0854-abd3-4f37-359d-1db1913189af"
 }
