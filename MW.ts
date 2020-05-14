@@ -48,7 +48,7 @@ namespace MagicWand_EXT {
      * @param R the R from 0 to 100, eg:5
      * @param n the n from 0 (min) to 100 (max), eg:50
      */
-    //% blockId=motorbit_turnleft block="turn left with speed %n"
+    //% blockId=motorbit_turnleft block="R= %R turn left with speed %n"
     //% n.min=0 n.max=100
     //% R.min=0 R.max=100
     export function turnleft(R: number, n: number): void {
@@ -70,10 +70,10 @@ namespace MagicWand_EXT {
 
     /**
      * TODO: describe your function here
-     * @param R the R from 0 to 100, eg:5
+     * @param R the R from 0 (min) to 100 (max), eg:5
      * @param n the n from 0 (min) to 100 (max), eg:50
      */
-    //% blockId=motorbit_turnright block="turn right with speed %n"
+    //% blockId=motorbit_turnright block="R= %R turn right with speed %n"
     //% n.min=0 n.max=100
     //% R.min=0 R.max=100
     export function turnright(R: number, n: number): void {
