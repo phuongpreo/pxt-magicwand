@@ -19,8 +19,8 @@ namespace MagicWand_EXT {
         // Add code here
         pins.digitalWritePin(DigitalPin.P0, 0)
         pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
-        if(n==0) n=20
-        pins.analogWritePin(AnalogPin.P1, (n - 20) * 1023 / 100)
+        if(n==0) n=30
+        pins.analogWritePin(AnalogPin.P1, (n - 30) * 1023 / 100)
 
 
     }
@@ -37,7 +37,7 @@ namespace MagicWand_EXT {
 
         pins.digitalWritePin(DigitalPin.P0, 1)
         n = 100 - n
-        pins.analogWritePin(AnalogPin.P1, (n + 20) * 1023 / 100)
+        pins.analogWritePin(AnalogPin.P1, (n + 30) * 1023 / 100)
         pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
 
     }
@@ -62,7 +62,7 @@ namespace MagicWand_EXT {
             pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
         } else {
             m = n * R / (R + d)
-            pins.analogWritePin(AnalogPin.P1, (m - 20) * 1023 / 100)
+            pins.analogWritePin(AnalogPin.P1, (m - 30) * 1023 / 100)
             pins.analogWritePin(AnalogPin.P2, n * 1023 / 100)
         }
 
@@ -89,7 +89,7 @@ namespace MagicWand_EXT {
         } else {
             m = n * R / (R + d)
             pins.analogWritePin(AnalogPin.P2, m * 1023 / 100)
-            pins.analogWritePin(AnalogPin.P1, (n - 20) * 1023 / 100)
+            pins.analogWritePin(AnalogPin.P1, (n - 30) * 1023 / 100)
         }
 
     }
